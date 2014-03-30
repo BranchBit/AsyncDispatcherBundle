@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="BBIT/AsyncDispatcherBundle : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>BBIT/AsyncDispatcherBundle</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/whitewhidow/AsyncDispatcherBundle">View on GitHub</a>
+
+          <h1 id="project_title">BBIT/AsyncDispatcherBundle</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/whitewhidow/AsyncDispatcherBundle/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/whitewhidow/AsyncDispatcherBundle/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="asyncdispatcherbundle" class="anchor" href="#asyncdispatcherbundle"><span class="octicon octicon-link"></span></a>AsyncDispatcherBundle</h1>
+
+<p>AsyncDispatcherBundle is a simple bundle wich provides you with an async event dispatcher, wich will store events untill kernel.terminate, and then fire them using the regular event dispatcher.</p>
+
+<h3>
+<a name="step-1-download-bbitasyncdispatcherbundle-using-composer" class="anchor" href="#step-1-download-bbitasyncdispatcherbundle-using-composer"><span class="octicon octicon-link"></span></a>Step 1: Download BBITAsyncDispatcherBundle using composer</h3>
+
+<p>Add BBITAsyncDispatcherBundle in your composer.json:</p>
+
+<div class="highlight highlight-js"><pre><span class="p">{</span>
+    <span class="s2">"require"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"bbit/async-dispatcher-bundle"</span><span class="o">:</span> <span class="s2">"dev-master"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Now tell composer to download the bundle by running the command:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>php composer.phar update bbit/async-dispatcher-bundle
+</pre></div>
+
+<p>Composer will install the bundle to your project's <code>vendor/BBIT</code> directory.</p>
+
+<h3>
+<a name="step-2-enable-the-bundle" class="anchor" href="#step-2-enable-the-bundle"><span class="octicon octicon-link"></span></a>Step 2: Enable the bundle</h3>
+
+<p>Enable the bundle in the kernel:</p>
+
+<div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="c1">// app/AppKernel.php</span>
+
+<span class="k">public</span> <span class="k">function</span> <span class="nf">registerBundles</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nv">$bundles</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="c1">// ...</span>
+        <span class="k">new</span> <span class="nx">BBIT\AsyncDispatcherBundle\BBITAsyncDispatcherBundle</span><span class="p">(),</span>
+    <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h3>
+
+<div class="highlight highlight-php"><pre><span class="nv">$dispatcher</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">'bbit_async_dispatcher.dispatcher'</span><span class="p">);</span> <span class="c1">// get dispatcher service</span>
+<span class="nv">$dispatcher</span><span class="o">-&gt;</span><span class="na">addAsyncEvent</span><span class="p">(</span><span class="s1">'name_of_the.event'</span><span class="p">,</span> <span class="k">new</span> <span class="nx">CustomEvent</span><span class="p">(</span><span class="nv">$entity</span><span class="p">));</span>
+</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">BBIT/AsyncDispatcherBundle maintained by <a href="https://github.com/whitewhidow">whitewhidow</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
