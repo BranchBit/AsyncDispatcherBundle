@@ -11,6 +11,10 @@
             "role": "Developer"
         }
     ],
+    "support": {
+        "email": "iwonderwhy5@hotmail.com",
+        "email": "contact@branchbit.be"
+    },
     "minimum-stability": "dev",
     "version": "1.0.0",
     "require": {
