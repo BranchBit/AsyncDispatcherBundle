@@ -7,9 +7,5 @@
     "require": {
         "php": ">=5.3.2",
         "symfony/framework-bundle": "~2.3"
-    },
-    "autoload": {
-        "psr-0": { "BBIT\\AsyncDispatcherBundle": "" }
-    },
-    "target-dir": "BBIT/AsyncDispatcherBundle"
+    }
 }
