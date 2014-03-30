@@ -40,7 +40,7 @@ public function registerBundles()
 ```
 
 
-### Usage: Create your User class
+### Usage:
 
 ``` php
 $dispatcher = $this->container->get('bbit_async_dispatcher.dispatcher'); // get dispatcher service
