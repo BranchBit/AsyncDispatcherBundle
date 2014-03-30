@@ -2,6 +2,9 @@ AsyncDispatcherBundle
 =====================
 
 
+AsyncDispatcherBundle is a simple bundle wich provides you with an async event dispatcher, wich will store events untill kernel.terminate, and then fire them using the regular event dispatcher.
+
+
 ### Step 1: Download BBITAsyncDispatcherBundle using composer
 
 Add BBITAsyncDispatcherBundle in your composer.json:
