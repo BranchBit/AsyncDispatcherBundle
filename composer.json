@@ -3,7 +3,6 @@
     "type": "symfony-bundle",
     "description": "symfony BBITAsyncDispatcherBundle",
     "license": "MIT",
-    {
     "authors": [
         {
             "name": "Janssens Sam",
@@ -11,8 +10,7 @@
             "homepage": "http://branchbit.be",
             "role": "Developer"
         }
-    ]
-    },
+    ],
     "minimum-stability": "dev",
     "version": "1.0.0",
     "require": {
