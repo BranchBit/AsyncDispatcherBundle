@@ -3,6 +3,16 @@
     "type": "symfony-bundle",
     "description": "symfony BBITAsyncDispatcherBundle",
     "license": "MIT",
+    {
+    "authors": [
+        {
+            "name": "Janssens Sam",
+            "email": "iwonderwhy5@hotmail.com",
+            "homepage": "http://branchbit.be",
+            "role": "Developer"
+        }
+    ]
+    },
     "minimum-stability": "dev",
     "version": "1.0.0",
     "require": {
