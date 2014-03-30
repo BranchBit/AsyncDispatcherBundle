@@ -9,7 +9,7 @@
         "symfony/framework-bundle": "~2.3"
     },
     "autoload": {
-        "psr-0": { "BBIT\\AsyncDispatchBundle": "" }
+        "psr-0": { "BBIT\\AsyncDispatcherBundle": "" }
     },
-    "target-dir": "BBIT/AsyncDispatchBundle"
+    "target-dir": "BBIT/AsyncDispatcherBundle"
 }
