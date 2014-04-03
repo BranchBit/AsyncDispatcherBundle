@@ -13,6 +13,11 @@
     syntaxCheck                 = "false"
     bootstrap                   = "./Tests/bootstrap.php" >
 
+
+    <php>
+        <server name="KERNEL_DIR" value="./Tests/app" />
+    </php>
+
     <testsuites>
         <testsuite name="BBITAsyncDispatcherBundle test suite">
             <directory suffix="Test.php">./Tests</directory>
