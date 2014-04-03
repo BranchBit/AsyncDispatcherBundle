@@ -1,0 +1,5 @@
+# Tests/Controller/App/routing.yml
+BeberleiWorkflowBundle:
+    resource: "@BBITAsyncDispatcherBundle/"
+    type:     annotation
+    prefix:   /
