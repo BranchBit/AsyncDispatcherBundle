@@ -24,11 +24,9 @@
     </php>
 
     <filter>
-        <whitelist>
-            <exclude>
-                <directory>vendor</directory>
-            </exclude>
-        </whitelist>
+        <blacklist>
+                <directory>./vendor</directory>
+        </blacklist>
     </filter>
 
 </phpunit>
