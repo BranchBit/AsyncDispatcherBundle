@@ -2,7 +2,6 @@ AsyncDispatcherBundle
 =====================
 
 [![Build Status](https://travis-ci.org/whitewhidow/AsyncDispatcherBundle.svg?branch=master)](https://travis-ci.org/whitewhidow/AsyncDispatcherBundle)
-[![Coverage Status](https://coveralls.io/repos/whitewhidow/AsyncDispatcherBundle/badge.png)](https://coveralls.io/r/whitewhidow/AsyncDispatcherBundle)
 
 AsyncDispatcherBundle is a simple bundle wich provides you with an async event dispatcher, wich will store events untill kernel.terminate, and then fire them using the regular event dispatcher.
 
