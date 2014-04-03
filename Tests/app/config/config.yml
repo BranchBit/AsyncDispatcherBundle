@@ -1,10 +1,5 @@
 framework:
     secret:          secret
     test: ~
-    router:          { resource: "%kernel.root_dir%/config/routing.yml" }
-    form:            true
-    csrf_protection: true
-    validation:      { enable_annotations: true }
-    templating:      { engines: ['twig'] }
     session:
         storage_id: session.storage.filesystem
