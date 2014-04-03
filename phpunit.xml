@@ -11,17 +11,13 @@
     processIsolation            = "false"
     stopOnFailure               = "false"
     syntaxCheck                 = "false"
-    bootstrap                   = "bootstrap.php.cache" >
+    bootstrap                   = "./Tests/bootstrap.php" >
 
     <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory>./</directory>
+        <testsuite name="BBITAsyncDispatcherBundle test suite">
+            <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>
-
-    <php>
-        <server name="KERNEL_DIR" value="/home/sam/git/PosBranch/app/" />
-    </php>
 
     <filter>
         <whitelist>
