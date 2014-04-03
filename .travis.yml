@@ -8,4 +8,4 @@ before_script:
     - php composer.phar install --dev --no-interaction
 
 script:
-    - phpunit -c ./phpunit.xml ./Tests
+    - phpunit -c ./phpunit.xml
