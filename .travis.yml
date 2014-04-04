@@ -9,3 +9,6 @@ before_script:
 
 script:
     - phpunit -c ./phpunit.xml
+    
+notifications:
+    hipchat: 3ffb5349141b206d52803426af043b@BranchBit
