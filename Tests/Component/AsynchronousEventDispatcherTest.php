@@ -51,7 +51,7 @@ class AsynchronousEventDispatcherTest extends WebTestCase
             MockupListener::$called = true;
         });
 
-        // this will trigger the 'kernel.terminate' event, also triggering your dispatchAsyncEvent()
+        // this will trigger the 'kernel.terminate' event, also triggering your dispatchAsync()
         self::$kernel->terminate(new Request(), new Response());
 
         $this->assertTrue(MockupListener::$called);
