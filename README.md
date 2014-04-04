@@ -10,7 +10,7 @@ AsyncDispatcherBundle is a simple bundle wich provides you with an async event d
 
 ### Step 1: Download BBITAsyncDispatcherBundle using composer
 
-Add BBITAsyncDispatcherBundle in your composer.json:
+Add BBITAsyncDispatcherBundle in your composer.json: (use the latest stable, NOT dev-master)
 
 ```js
 {
