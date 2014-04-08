@@ -1,9 +1,12 @@
 AsyncDispatcherBundle
 =====================
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/ac7bf46c-aa2a-4100-bcf0-c3bad08cc713/big.png)](https://insight.sensiolabs.com/projects/ac7bf46c-aa2a-4100-bcf0-c3bad08cc713)
+
 [![Build Status](https://travis-ci.org/whitewhidow/AsyncDispatcherBundle.svg?branch=master)](https://travis-ci.org/whitewhidow/AsyncDispatcherBundle)
 [![Latest Stable Version](https://poser.pugx.org/bbit/async-dispatcher-bundle/v/stable.png)](https://packagist.org/packages/bbit/async-dispatcher-bundle)
 [![Total Downloads](https://poser.pugx.org/bbit/async-dispatcher-bundle/downloads.png)](https://packagist.org/packages/bbit/async-dispatcher-bundle)
+
 
 AsyncDispatcherBundle is a simple bundle wich provides you with an async event dispatcher, wich will store events untill kernel.terminate, and then fire them using the regular event dispatcher.
 
