@@ -13,7 +13,7 @@ class AsynchronousEventListener
 		$this->dispatcher = $dispatcher;
 	}
 	 
-	public function onKernelTerminate(PostResponseEvent $event)
+	public function onKernelTerminate()
 	{
 		$this->dispatcher->dispatchAsync();
 	}
