@@ -2,8 +2,6 @@
  
 namespace BBIT\AsyncDispatcherBundle\Component\EventDispatcher;
  
-use Symfony\Component\HttpKernel\Event\PostResponseEvent;
- 
 class AsynchronousEventListener
 {
 	protected $dispatcher;
