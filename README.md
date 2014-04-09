@@ -3,6 +3,9 @@ AsyncDispatcherBundle
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/ac7bf46c-aa2a-4100-bcf0-c3bad08cc713/big.png)](https://insight.sensiolabs.com/projects/ac7bf46c-aa2a-4100-bcf0-c3bad08cc713)
 
+[![knpbundles.com](http://knpbundles.com/whitewhidow/AsyncDispatcherBundle/badge-short)](http://knpbundles.com/whitewhidow/AsyncDispatcherBundle)
+
+
 [![Build Status](https://travis-ci.org/whitewhidow/AsyncDispatcherBundle.svg?branch=master)](https://travis-ci.org/whitewhidow/AsyncDispatcherBundle)
 [![Latest Stable Version](https://poser.pugx.org/bbit/async-dispatcher-bundle/v/stable.png)](https://packagist.org/packages/bbit/async-dispatcher-bundle)
 [![Total Downloads](https://poser.pugx.org/bbit/async-dispatcher-bundle/downloads.png)](https://packagist.org/packages/bbit/async-dispatcher-bundle)
