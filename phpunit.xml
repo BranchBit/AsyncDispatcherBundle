@@ -27,7 +27,7 @@
     <!-- Ignore these for Code Coverage -->
     <filter>
         <whitelist>
-            <directory>./src</directory>
+            <directory>./</directory>
             <exclude>
                 <directory>./vendor</directory>
                 <directory>./Tests/</directory>
