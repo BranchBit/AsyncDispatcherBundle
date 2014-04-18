@@ -48,15 +48,17 @@ class AsynchronousEventDispatcher implements EventDispatcherInterface
 			'event' => $event,
 		);
 	}
+	
+	public function addListener($eventName, $listener, $priority = 0)
+	{
+		return $this->dispatcher->addListener($eventName, $listener, $priority);
+	}
+	
+	// @codeCoverageIgnoreStart 
 	 
 	public function dispatch($eventName, Event $event = null)
 	{
 		return $this->dispatcher->dispatch($eventName, $event);
-	}
-	 
-	public function addListener($eventName, $listener, $priority = 0)
-	{
-		return $this->dispatcher->addListener($eventName, $listener, $priority);
 	}
 	 
 	public function addSubscriber(EventSubscriberInterface $subscriber)
