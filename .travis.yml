@@ -8,7 +8,11 @@ before_script:
     - php composer.phar install --dev --no-interaction
 
 script:
-    - phpunit -c ./phpunit.xml
+    - mkdir -p build/logs
+    - phpunit -c ./phpunit.xml --coverage-clover build/logs/clover.xml
     
 notifications:
     hipchat: 3ffb5349141b206d52803426af043b@BranchBit
+
+after_script:
+ - php vendor/bin/coveralls -v
