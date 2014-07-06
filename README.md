@@ -12,7 +12,7 @@ AsyncDispatcherBundle
 [![Total Downloads](https://poser.pugx.org/bbit/async-dispatcher-bundle/downloads.png)](https://packagist.org/packages/bbit/async-dispatcher-bundle)
 
 
-AsyncDispatcherBundle is a simple bundle wich provides you with an async event dispatcher, wich will store events untill kernel.terminate, and then fire them using the regular event dispatcher.
+AsyncDispatcherBundle is a simple bundle which provides you with an async event dispatcher, which will store events untill kernel.terminate, and then fire them using the regular event dispatcher.
 
 
 ### Step 1: Download BBITAsyncDispatcherBundle using composer
