@@ -15,5 +15,4 @@ class AsynchronousEventListener
     {
         $this->dispatcher->dispatchAsync();
     }
-
 }
