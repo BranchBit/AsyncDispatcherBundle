@@ -21,11 +21,11 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('bbit_async_dispatcher');
         $rootNode
             ->children()
-                ->scalarNode('bbit_async_dispatcher.dispatcher.class')
+                ->scalarNode('dispatcher_class')
                     ->cannotBeEmpty()
                     ->defaultValue('BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventDispatcher')
                 ->end()
-                ->scalarNode('bbit_async_dispatcher.listener.terminate.class')
+                ->scalarNode('terminate_class')
                     ->cannotBeEmpty()
                     ->defaultValue('BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventListener')
                 ->end()
