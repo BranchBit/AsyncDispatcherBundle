@@ -1,7 +1,3 @@
-parameters:
-    bbit_async_dispatcher.dispatcher.class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventDispatcher
-    bbit_async_dispatcher.listener.terminate.class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventListener
-
 services:
     bbit_async_dispatcher.dispatcher:
         class: %bbit_async_dispatcher.dispatcher.class%
