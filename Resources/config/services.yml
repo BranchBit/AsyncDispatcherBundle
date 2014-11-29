@@ -1,17 +1,14 @@
 parameters:
-#    bbit_async_dispatcher.example.class: BBIT\AsyncDispatcherBundle\Example
+    bbit_async_dispatcher.dispatcher.class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventDispatcher
+    bbit_async_dispatcher.listener.terminate.class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventListener
 
-#services:
-#    bbit_async_dispatcher.example:
-#        class: %bbit_async_dispatcher.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
 services:
     bbit_async_dispatcher.dispatcher:
-        class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventDispatcher
+        class: %bbit_async_dispatcher.dispatcher.class%
         arguments:
             - @event_dispatcher
     bbit_async_dispatcher.listener.terminate:
-        class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventListener
+        class: %bbit_async_dispatcher.listener.terminate.class%
         arguments:
             - @bbit_async_dispatcher.dispatcher
         tags:

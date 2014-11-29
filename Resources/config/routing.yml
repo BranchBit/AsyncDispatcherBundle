@@ -1,3 +1,0 @@
-bbit_async_dispatcher_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: BBITAsyncDispatcherBundle:Default:index }
