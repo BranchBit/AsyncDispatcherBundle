@@ -18,11 +18,19 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('bbit_async_dispatcher');
-
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode = $treeBuilder->root('bbit_async_dispatcher');
+        $rootNode
+            ->children()
+                ->scalarNode('bbit_async_dispatcher.dispatcher.class')
+                    ->cannotBeEmpty()
+                    ->defaultValue('BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventDispatcher')
+                ->end()
+                ->scalarNode('bbit_async_dispatcher.listener.terminate.class')
+                    ->cannotBeEmpty()
+                    ->defaultValue('BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventListener')
+                ->end()
+            ->end()
+        ;
 
         return $treeBuilder;
     }
