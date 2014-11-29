@@ -20,7 +20,7 @@ class BBITAsyncDispatcherExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $this->processConfiguration($configuration, $configs);
+        $config = $this->processConfiguration($configuration, $configs);
 
         $container->setParameter('bbit_async_dispatcher.dispatcher.class', $config['dispatcher_class']);
         $container->setParameter('bbit_async_dispatcher.listener.terminate.class', $config['terminate_class']);
