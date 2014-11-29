@@ -9,7 +9,6 @@ services:
             - @event_dispatcher
     bbit_async_dispatcher.listener.terminate:
         class: %bbit_async_dispatcher.listener.terminate.class%
-        public: false
         arguments:
             - @bbit_async_dispatcher.dispatcher
         tags:
