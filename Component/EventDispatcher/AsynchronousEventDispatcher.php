@@ -29,7 +29,7 @@ class AsynchronousEventDispatcher implements EventDispatcherInterface
     public function dispatchAsync()
     {
         foreach ($this->asyncEvents as $eachEntry) {
-        $this->dispatcher->dispatch($eachEntry['name'], $eachEntry['event']);
+            $this->dispatcher->dispatch($eachEntry['name'], $eachEntry['event']);
         }
     }
 
