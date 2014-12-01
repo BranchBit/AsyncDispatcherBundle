@@ -20,10 +20,7 @@ class BBITAsyncDispatcherExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $config = $this->processConfiguration($configuration, $configs);
-
-        $container->setParameter('bbit_async_dispatcher.dispatcher.class', $config['dispatcher_class']);
-        $container->setParameter('bbit_async_dispatcher.listener.terminate.class', $config['terminate_class']);
+        $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
