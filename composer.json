@@ -24,7 +24,7 @@
         "satooshi/php-coveralls": "v0.6.1"
     },
     "autoload": {
-        "psr-0": { "BBIT\\AsyncDispatcherBundle": "" }
+        "psr-4": { "BBIT\\AsyncDispatcherBundle\\": "" }
     },
     "target-dir": "BBIT/AsyncDispatcherBundle"
 }
