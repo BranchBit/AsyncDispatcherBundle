@@ -1,0 +1,18 @@
+language: php
+
+php:
+    - 5.4
+
+before_script:
+    - wget http://getcomposer.org/composer.phar
+    - php composer.phar install --dev --no-interaction
+
+script:
+    - mkdir -p build/logs
+    - phpunit -c ./phpunit.xml --coverage-clover build/logs/clover.xml
+    
+notifications:
+    hipchat: 3ffb5349141b206d52803426af043b@BranchBit
+
+after_script:
+ - php vendor/bin/coveralls -v

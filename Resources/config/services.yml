@@ -1,0 +1,16 @@
+parameters:
+    bbit_async_dispatcher.dispatcher.class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventDispatcher
+    bbit_async_dispatcher.listener.terminate.class: BBIT\AsyncDispatcherBundle\Component\EventDispatcher\AsynchronousEventListener
+
+services:
+    bbit_async_dispatcher.dispatcher:
+        class: %bbit_async_dispatcher.dispatcher.class%
+        arguments:
+            - @event_dispatcher
+    bbit_async_dispatcher.listener.terminate:
+        class: %bbit_async_dispatcher.listener.terminate.class%
+        arguments:
+            - @bbit_async_dispatcher.dispatcher
+        tags:
+            - { name: 'kernel.event_listener', event: 'kernel.terminate' }
+            - { name: 'kernel.event_listener', event: 'console.terminate' }

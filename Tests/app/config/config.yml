@@ -1,0 +1,5 @@
+framework:
+    secret:          secret
+    test: ~
+    session:
+        storage_id: session.storage.filesystem
