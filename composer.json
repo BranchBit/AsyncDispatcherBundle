@@ -25,6 +25,5 @@
     },
     "autoload": {
         "psr-4": { "BBIT\\AsyncDispatcherBundle\\": "" }
-    },
-    "target-dir": "BBIT/AsyncDispatcherBundle"
+    }
 }
