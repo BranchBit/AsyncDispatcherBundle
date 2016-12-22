@@ -4,11 +4,11 @@ parameters:
 
 services:
     bbit_async_dispatcher.dispatcher:
-        class: %bbit_async_dispatcher.dispatcher.class%
+        class: "%bbit_async_dispatcher.dispatcher.class%"
         arguments:
             - "@event_dispatcher"
     bbit_async_dispatcher.listener.terminate:
-        class: %bbit_async_dispatcher.listener.terminate.class%
+        class: "%bbit_async_dispatcher.listener.terminate.class%"
         arguments:
             - "@bbit_async_dispatcher.dispatcher"
         tags:
