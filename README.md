@@ -22,7 +22,7 @@ Add BBITAsyncDispatcherBundle in your composer.json: (use the latest stable, NOT
 ```js
 {
     "require": {
-        "bbit/async-dispatcher-bundle": "2.3.0",
+        "bbit/async-dispatcher-bundle": "2.5.0",
     }
 }
 ```
