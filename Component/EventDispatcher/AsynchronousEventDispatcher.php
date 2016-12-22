@@ -84,6 +84,7 @@ class AsynchronousEventDispatcher implements EventDispatcherInterface
     {
         return $this->dispatcher->hasListeners($eventName);
     }
+    
     public function getListenerPriority($eventName, $listener)
     {
         return $this->dispatcher->getListenerPriority($eventName, $listener);
